@@ -2,7 +2,7 @@ if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
 }
 
-const Listing = require("../models/listing");
+const Listing = require("../models/listing.js");
 const {geocodeLocation} = require('../public/js/map_api.js');
 const map_api_key = process.env.MAP_API_KEY
 
